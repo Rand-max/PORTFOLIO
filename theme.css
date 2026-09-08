@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{color-scheme:light;--site-font:"Space Grotesk","Noto Serif TC","Microsoft JhengHei",sans-serif}
+body,body *{font-family:var(--site-font)!important}
+/* Compact Skill content while retaining shared navigation and footer sizing. */
+main.skills{max-width:1260px;padding:65px 6.5% 65px}
+.skills .page-title{font-size:clamp(28px,3.1vw,46px);margin-bottom:48px;font-weight:400}
+.skills .page-title:after{width:40px;margin-top:26px}
+.skills .skill-row{padding-bottom:42px;margin-bottom:42px}
+.skills .skill-row:last-child{padding-bottom:0;margin-bottom:0}
+.skills .skill-copy h2{font-size:clamp(23px,2.2vw,32px);font-weight:700}
+.skills .english{font-size:16px}
+.skills .english:after{margin:20px 0}
+.skills .skill-copy ul{font-size:clamp(14px,1.15vw,17px);line-height:1.85}
+.skills .skill-copy li{margin:6px 0}
+@media(max-width:600px){
+ main.skills{padding:36px 22px 44px}
+ .skills .page-title{font-size:27px;margin-bottom:32px}
+ .skills .skill-row{padding-bottom:28px;margin-bottom:28px;gap:20px}
+ .skills .skill-copy h2{font-size:24px}
+ .skills .skill-copy ul{font-size:14px}
+}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex-shrink:0;min-height:38px;padding:8px 12px;border:1px solid #aaa;border-radius:22px;background:transparent;color:inherit;font:12px Arial,sans-serif;cursor:pointer;letter-spacing:.3px}
+.theme-toggle:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.theme-toggle:hover{background:rgba(128,128,128,.12)}
+html[data-theme="dark"]{color-scheme:dark}
+html[data-theme="dark"] body{background:#171717;color:#e9e9e7}
+html[data-theme="dark"] .nav{background:rgba(23,23,23,.96);border-color:#353535}
+html[data-theme="dark"] .links .active{border-color:#ddd}
+html[data-theme="dark"] .logo{filter:invert(1)}
+html[data-theme="dark"] .hero,html[data-theme="dark"] .about-hero{background:#1c1c1c}
+html[data-theme="dark"] .roles,html[data-theme="dark"] .contact{background:#242424}
+html[data-theme="dark"] .copyright{color:#aaa}
+html[data-theme="dark"] .copy p,html[data-theme="dark"] .bullet strong{color:#dededc}
+html[data-theme="dark"] .hero-copy small{color:#b5b5b5}
+html[data-theme="dark"] .section-title:after,html[data-theme="dark"] .title:after,html[data-theme="dark"] .contact h2:after,html[data-theme="dark"] .scroll:after{background:#bdbdbd}
+html[data-theme="dark"] .portrait-real{filter:none}
+html[data-theme="dark"] .about-photo{mix-blend-mode:screen}
+html[data-theme="dark"] .word{mix-blend-mode:screen}
+html[data-theme="dark"] .work-grid video{background:transparent}
+html[data-theme="dark"] .mode-toggle,html[data-theme="dark"] .video-arrow{background:#252525;color:#eee;border-color:#666}
+html[data-theme="dark"] .mode-toggle:hover,html[data-theme="dark"] .video-arrow:hover{background:#444}
+html[data-theme="dark"] .item:before{background:#eee;border-color:#171717;outline-color:#999}
+html[data-theme="dark"] #top{background:#e9e9e7;color:#191919}
+@media(max-width:700px){.theme-toggle{font-size:10px;padding:6px 8px;min-height:32px}.nav{gap:8px}.links{gap:12px}}
+@media(max-width:380px){.theme-toggle{font-size:9px;padding:5px}.nav .logo{width:80px}.links{gap:8px}}
